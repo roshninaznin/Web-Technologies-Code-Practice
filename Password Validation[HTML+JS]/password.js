@@ -27,7 +27,7 @@ for (let i = 0; i < passData.length; i++) {
     if(p === "$" || p === "#" || p === "@") {
         hasSpecialChar = true;
     }
-    if (p>=0 && p<=9){
+    if (p >= '0' && p <= '9'){
         hasNumber=true;
     }
 }
