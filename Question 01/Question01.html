@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<!--  Question 01
+Create an HTML form with two text fields — First Name and Last Name — and a Submit button. 
+When the user submits the form, validate the following using JavaScript (triggered by the onsubmit attribute): 
+     1. Both fields must not be empty. 
+     2. Each field must have at least 2 characters. 
+If validation fails, prevent form submission and display an alert message. -->
+
+<head>
+    <title>HTML FORM</title>
+</head>
+<body>
+    First Name: <input type="text" name="first name" value="" id="fname"/> <br>
+    Second Name: <input type ="text" name="second name" value="" id="lname" /> <br>
+
+    <input type="submit" name="submit" value="submit" onclick="return validation()" />
+
+<script src="practice.js"></script>
+</body>
+</html>
