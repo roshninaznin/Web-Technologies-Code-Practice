@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="FORM VALIDATION">
+        <meta name="keyword" content="HTML, CSS, JAVASCRIPT">
+        <meta name="author" content="Naznin Akter Roshmny">
+        <!-- <meta http-equiv="refresh" content="5;url=another.html"> -->
+        <title>HTML Form Validation </title>
+    </head>
+    <body>
+        <h1>HTML Form Validation</h1>
+        <fieldset>
+            <legend>Sign up form</legend>
+      
+        <form>
+            Name: <input type="text" name="name" value="" id="name" placeholder="Enter yourname" required/> <br>
+            Email: <input type="email" name="name" value="" id="email" placeholder="Enter your email" required/><br>
+            Password: <input type="password" name="password" value="" autocomplete="new-password" id="pass" placeholder="Enter yourpassword" required/> <br>
+            Gender:<input type="radio" name="gender" value="male" id="male" /> Male
+                   <input type="radio" name="gender" value="female" id="female" /> Female
+                   <input type="radio" name="gender" value="others" id="others" /> Others 
+                   <br>
+            Date of Birth: <input type="date" name="date of birth" value="" id="dob" /> <br>
+            Blood Group: <select name="blood_group" id="bg"required>S
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>s
+                </select> <br>
+            Nationality: <select name="nationality" id="nn" required>
+                <option value="">Select Nationality</option>
+                <option value="Bangladeshi">Bangladeshi</option>
+                <option value="Indian">Indian</option>
+                <option value="Pakistani"> </option>
+            </select>  <br>
+            Degree: <input type="checkbox" name="degree[]" value="ssc" />SSC
+                    <input type="checkbox" name="degree[]" value="hsc" />HSC
+                    <input type="checkbox" name="degree[]" value="bsc" />BSC
+                    <input type="checkbox" name="degree[]" value="msc" />MSC
+                    <br>
+            Hobbies: <input type="checkbox" name="hobby[]" value="photography" /> Photography
+                     <input type="checkbox" name="hobby[]" value="gardening"  /> Gardening
+                     <input  type="checkbox" name="hobby[]" value="reading" /> reading
+                       <br>
+            Profile pic: <input type="file" name="pic" value="" id="pic" required/>
+                     <br>
+
+            <p id="error"></p>  <br>
+            <p id="success"></p>  <br>
+
+
+            <input type="submit" name="submit" value="submit" onclick="return validation()"/>
+            <input type="reset" name="reset" value="reset" />
+
+                </form>
+              </fieldset>
+
+        <script src="script.js"></script>
+    </body>
+</html>
